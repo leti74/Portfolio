@@ -1,0 +1,85 @@
+<mat-toolbar class="fixed top-0 left-0 w-full z-50 
+bg-black/90! backdrop-blur-md text-white 
+px-6 py-2 md:py-3 
+flex justify-between items-center shadow-md border-b border-[#d780ff]/20!">
+
+    <!-- Logo -->
+    <div class="flex items-center md:ml-10 ml-2 " routerLink="/">
+        <img src="/assets/icons/logo_white.PNG" alt="logo" class="h-8 md:h-10 object-contain">
+    </div>
+
+    <!-- Menu desktop -->
+    <div class="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-6 
+    text-xs md:text-sm lg:text-base font-medium">
+        <button (click)=" scrollTo('chi-sono')"
+            [ngClass]="activeSection === 'chi-sono' ? 'text-[#d780ff]' : 'text-white'"
+            class="hover:text-[#d780ff] transition-colors duration-200">
+            Chi sono
+        </button>
+        <button (click)="scrollTo('qualita')" [ngClass]="activeSection === 'qualita' ? 'text-[#d780ff]' : 'text-white'"
+            class="hover:text-[#d780ff] transition-colors duration-200">
+            Qualità
+        </button>
+        <button (click)="scrollTo('abilita')" [ngClass]="activeSection === 'abilita' ? 'text-[#d780ff]' : 'text-white'"
+            class="hover:text-[#d780ff] transition-colors duration-200">
+            Skills
+        </button>
+        <button (click)="scrollTo('portfolio')"
+            [ngClass]="activeSection === 'portfolio' ? 'text-[#d780ff]' : 'text-white'"
+            class="hover:text-[#d780ff] transition-colors duration-200">
+            Portfolio
+        </button>
+        <button (click)="scrollTo('futuro')" [ngClass]="activeSection === 'futuro' ? 'text-[#d780ff]' : 'text-white'"
+            class="hover:text-[#d47bfd] transition-colors duration-200">
+            Futuro
+        </button>
+
+    </div>
+
+    <button class="bg-white mr-10 text-gray-900 px-3 py-1.5 md:px-4 md:py-2 
+    rounded-full hover:bg-purple-300 transition-all duration-300 
+    shadow-md font-semibold hidden md:flex text-xs md:text-sm" routerLink="cv">
+        CV
+    </button>
+
+    <!-- Hamburger mobile -->
+    <button mat-icon-button class="md:hidden! text-white! " (click)="toggleMenu()">
+        <mat-icon>menu</mat-icon>
+    </button>
+</mat-toolbar>
+
+<!-- Menu mobile full width -->
+@if (menuOpen)
+{<div
+    class="md:hidden fixed top-13.5 left-0 w-full bg-black/90 text-white px-6 py-6 flex flex-col gap-5 shadow-lg z-40 animate-slideDown">
+
+    <button (click)="scrollTo('chi-sono'); toggleMenu()" class="text-left text-lg"
+        [ngClass]="activeSection === 'chi-sono' ? 'text-[#d780ff]' : 'text-white'">
+        Chi sono
+    </button>
+
+    <button (click)="scrollTo('qualita'); toggleMenu()" class="text-left text-lg"
+        [ngClass]="activeSection === 'qualita' ? 'text-[#d780ff]' : 'text-white'">
+        Qualità
+    </button>
+
+    <button (click)="scrollTo('abilita'); toggleMenu()" class="text-left text-lg"
+        [ngClass]="activeSection === 'abilita' ? 'text-[#d780ff]' : 'text-white'">
+        Skills
+    </button>
+
+    <button (click)="scrollTo('portfolio'); toggleMenu()" class="text-left text-lg"
+        [ngClass]="activeSection === 'portfolio' ? 'text-[#d780ff]' : 'text-white'">
+        Portfolio
+    </button>
+
+    <button (click)="scrollTo('futuro'); toggleMenu()" class="text-left text-lg"
+        [ngClass]="activeSection === 'futuro' ? 'text-[#d780ff]' : 'text-white'">
+        Futuro
+    </button>
+
+    <button class="md:mt-2 bg-white text-gray-900 px-4 py-2 rounded-full font-semibold" routerLink="cv"
+        (click)="toggleMenu()">
+        CV
+    </button>
+</div>}

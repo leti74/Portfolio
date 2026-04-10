@@ -1,0 +1,45 @@
+<section class="py-30 px-6 bg-purple-200/35 flex flex-col items-center">
+
+    <!-- Titolo -->
+    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900 text-center">
+        Contatti
+    </h2>
+
+    <p class="text-gray-700 text-center max-w-xl mb-12">
+        Se vuoi collaborare con me o semplicemente metterti in contatto,
+        non esitare a scrivermi. Sarò felice di risponderti!
+    </p>
+
+    <!-- BOX CONTATTI -->
+    <div class="flex flex-col sm:flex-row gap-6 items-center">
+
+        <!-- EMAIL TOGGLE -->
+        <div (click)="toggleEmail()"
+            class="flex items-center gap-3 bg-[#d780ff] hover:bg-[#b95de6] px-3 py-3 rounded-full shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer">
+
+            <!-- Icona -->
+            <img src="assets/icons/icon-email-bianco.png" alt="email" class="w-6 h-6 ml-3">
+
+            <!-- Email animata -->
+            <span class="text-white font-medium transition-all duration-300"
+                [ngClass]="showEmail ? 'opacity-100 ml-2' : 'opacity-0 w-0 overflow-hidden'">
+                letiimar4@gmail.com
+            </span>
+        </div>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/letizia-marra-43432130b/" target="_blank"
+            class="flex items-center gap-3 bg-[#d780ff] hover:bg-[#b95de6] px-5 py-3 rounded-full shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300">
+
+            <img src="assets/icons/icon-linkedin-bianco.png" alt="linkedin" class="w-7">
+        </a>
+
+        <!-- GitHub -->
+        <a href="https://github.com/leti74" target="_blank"
+            class="flex items-center gap-3 bg-[#d780ff] hover:bg-[#b95de6] px-5 py-3 rounded-full shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300">
+
+            <img src="assets/icons/icon-github-bianco.png" alt="github" class="w-7">
+        </a>
+
+    </div>
+</section>

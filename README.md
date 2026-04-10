@@ -1,59 +1,110 @@
-# PortfolioLetizia
+# 🌐 Portfolio - Letizia Marra
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.3.
+Questo è il mio portfolio personale sviluppato per presentare i miei progetti, competenze e il mio percorso come **Front-End Developer**.
 
-## Development server
+Il progetto include una homepage interattiva, una sezione progetti, una sezione competenze e un CV dedicato, tutto realizzato con un design moderno e responsive.
 
-To start a local development server, run:
+---
 
-```bash
-ng serve
-```
+## 🚀 Tecnologie utilizzate
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- Angular
+- TypeScript
+- HTML
+- Tailwind CSS
+- Angular Material
+- CSS
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 🎯 Obiettivo del progetto
 
-```bash
-ng generate component component-name
-```
+L’obiettivo del portfolio è:
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- Presentare i miei progetti web
+- Mostrare le mie competenze tecniche
+- Fornire un CV digitale professionale
+- Creare un’interfaccia moderna, responsive e user-friendly
 
-```bash
-ng generate --help
-```
+---
 
-## Building
+---
 
-To build the project run:
+## 🖥️ Sezioni principali
 
-```bash
-ng build
-```
+### 🧑 Chi sono
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Presentazione personale e introduzione al mio percorso nel design e nello sviluppo web.
 
-## Running unit tests
+### 🎨 Qualità
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Soft skills e valori personali come creatività, precisione e problem solving.
 
-```bash
-ng test
-```
+### ⚙️ Skills
 
-## Running end-to-end tests
+Competenze tecniche in:
 
-For end-to-end (e2e) testing, run:
+- HTML, CSS, JavaScript, TypeScript
+- Angular e React
+- Git e GitHub
+- UI responsive design
 
-```bash
-ng e2e
-```
+### 💼 Portfolio
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Raccolta dei miei progetti con anteprime e link diretti:
 
-## Additional Resources
+- NTTDATA project
+- Covid Dashboard
+- Recipe App
+- Book Finder
+- Fruit App
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### 📄 CV
+
+Curriculum Vitae digitale con:
+
+- Formazione
+- Esperienze
+- Competenze tecniche e trasversali
+
+### 📬 Contatti
+
+Sezione per contattarmi tramite:
+
+- Email
+- LinkedIn
+- GitHub
+
+---
+
+## 📱 Responsive Design
+
+Il sito è completamente responsive e ottimizzato per:
+
+- Desktop
+- Tablet
+- Mobile
+
+---
+
+## ✨ Features
+
+- Navbar con scroll attivo sulle sezioni
+- Menu mobile hamburger
+- Portfolio
+- Layout moderno e pulito
+- Palette colori personalizzata
+
+---
+
+## 📌 Progetti inclusi
+
+Ogni progetto nel portfolio è cliccabile e porta alla demo online.
+
+---
+
+## 📬 Contatti
+
+- Email: letiimar4@gmail.com
+- GitHub: https://github.com/leti74
+- LinkedIn: https://linkedin.com

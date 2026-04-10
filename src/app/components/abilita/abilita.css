@@ -1,0 +1,17 @@
+.black-bar .mat-progress-bar-fill::after {
+  background-color: #000 !important;
+}
+.custom-bar {
+  height: 10px;
+  border-radius: 999px;
+}
+
+/* colore barra Angular Material */
+::ng-deep .mdc-linear-progress__bar-inner {
+  border-color: #d780ff !important;
+}
+
+/* sfondo barra */
+::ng-deep .mdc-linear-progress__buffer {
+  background-color: #f3e8ff !important;
+}
